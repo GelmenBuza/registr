@@ -12,13 +12,14 @@
 
 body {
     margin: 0;
+    background-color: #f1ebd8;
 }
 
 .head {
     font-family: Nunito-bold;
     display: flex;
     justify-content: space-between;
-    background-color: burlywood;
+    background-color: #222b1b;
     height: 80px;
     position: relative;
 }
@@ -31,17 +32,18 @@ body {
 
 .head a {
     text-decoration: none;
-    color: white;
+    color: #f1ebd8;
 }
 
 .log {
     display: flex;
     align-items: center;
-    color: white;
+    color: #f1ebd8;
     font-size: 18px;
     gap: 15px;
     margin-left: 10px;
 }
+
 .item-first a {
     position: relative;
     z-index: 2;
@@ -51,7 +53,7 @@ body {
     display: none;
     position: absolute;
     width: 70px;
-    background-color: burlywood;
+    background-color: #222b1b;
     flex-direction: column;
     margin: 10px 0;
     align-items: center;
@@ -62,19 +64,19 @@ body {
 }
 
 .description span {
-    color: white;
+    color: f1ebd8;
     font-size: 18px;
     margin: 5px 0;
 }
 
-.item-first:hover > .description {
+.item-first:hover>.description {
     display: flex;
 }
 
 .user {
     display: flex;
     align-items: center;
-    color: white;
+    color: #f1ebd8;
     font-size: 18px;
     gap: 10px;
     margin-right: 10px;
@@ -85,25 +87,45 @@ body {
 }
 
 .form {
+    margin-top: 50px;
     width: 800px;
     height: 500px;
     display: flex;
     flex-direction: column;
 }
+
 .form input {
-    background-color: rgba(222, 184, 135, 0.3);
-    height: 30px;
+    background-color: #787d464b;
+    height: 50px;
     margin: 10px 0;
-    border-color: aqua;
+    border: none;
+    border-radius: 10px;
 }
 
 .form input::placeholder {
-    font-size: 8px;
+    font-size: 12px;
     font-family: Nunito-reg;
-    color: rgba(53, 42, 42, 0.822);
+    color: rgba(0, 0, 0, 0.5);
 }
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.submit {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #787d46;
+    color: #f1ebd8;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit:active {
+    background-color: #9aa059;
+    box-shadow: 0px 0px 10px 2px #787d46 inset
 }
